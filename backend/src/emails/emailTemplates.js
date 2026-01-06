@@ -7,7 +7,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome to Messenger</title>
+  <title>Welcome to Chatify</title>
   <!--[if mso]>
     <style>
       /* Outlook-specific tweaks */
@@ -18,7 +18,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
 <body style="margin:0;padding:0;background:#f5f7fb;">
   <!-- Preheader (hidden but shown in inbox previews) -->
   <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#ffffff;opacity:0;">
-    Welcome to Messenger — open the app to start messaging.
+    Welcome to Chatify — open the app to start messaging.
   </div>
 
   <!-- Outer table -->
@@ -41,7 +41,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
                   </td>
                   <td valign="middle" style="padding-left:14px;vertical-align:middle;">
                     <h1 style="margin:0;color:#ffffff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:20px;font-weight:700;">
-                      Welcome to Messenger
+                      Welcome to Chatify
                     </h1>
                     <div style="color:rgba(255,255,255,0.92);font-size:13px;margin-top:6px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;">
                       Real-time conversations. Simple and private.
@@ -59,7 +59,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
                 <p style="margin:0 0 12px 0;font-size:20px;font-weight:700;color:#0f172a;">Hello ${safeName},</p>
 
                 <p style="margin:0 0 14px 0;color:#334155;">
-                  Thanks for joining Messenger — we’re thrilled to have you. You’re all set to start messaging instantly with people you care about.
+                  Thanks for joining Chatify — we’re thrilled to have you. You’re all set to start messaging instantly with people you care about.
                 </p>
 
                 <!-- Steps box -->
@@ -90,14 +90,14 @@ export function createWelcomeEmailTemplate(name, clientURL) {
                           style="height:44px;v-text-anchor:middle;width:220px;" arcsize="50%" stroke="f" fillcolor="#5B5BE5">
                           <w:anchorlock/>
                           <center style="color:#ffffff;font-family:Arial, sans-serif;font-size:16px;font-weight:700;">
-                            Open Messenger
+                            Open Chatify
                           </center>
                         </v:roundrect>
                       <![endif]-->
                       <!--[if !mso]><!-- -->
                       <a href="${cta}" target="_blank" rel="noopener noreferrer"
                         style="display:inline-block;padding:12px 26px;border-radius:999px;background:linear-gradient(90deg,#5B5BE5,#0BC5EA);text-decoration:none;color:#ffffff;font-weight:700;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:16px;">
-                        Open Messenger
+                        Open Chatify
                       </a>
                       <!--<![endif]-->
                     </td>
@@ -106,7 +106,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
 
                 <p style="margin:0 0 12px 0;color:#334155;">If you need help, reply to this email — our support team is happy to assist.</p>
 
-                <p style="margin:0 0 0 0;color:#0f172a;font-weight:600;">Welcome aboard,<br/>The Messenger Team</p>
+                <p style="margin:0 0 0 0;color:#0f172a;font-weight:600;">Welcome aboard,<br/>The Chatify Team</p>
               </div>
             </td>
           </tr>
@@ -115,8 +115,8 @@ export function createWelcomeEmailTemplate(name, clientURL) {
           <tr>
             <td style="padding:18px 28px 32px;background:#ffffff;">
               <div style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:13px;color:#6b7280;text-align:center;">
-                <div style="margin-bottom:8px;">© ${new Date().getFullYear()} Messenger. All rights reserved.</div>
-                <div style="font-size:12px;">This message was sent to you because you created an account at Messenger.</div>
+                <div style="margin-bottom:8px;">© ${new Date().getFullYear()} Chatify. All rights reserved.</div>
+                <div style="font-size:12px;">This message was sent to you because you created an account at Chatify.</div>
               </div>
             </td>
           </tr>
