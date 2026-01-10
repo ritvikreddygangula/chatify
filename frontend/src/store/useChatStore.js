@@ -4,7 +4,8 @@ import { create } from "zustand";
 import { axiosInstance } from "../lib/axios";
 import toast from "react-hot-toast";
 import { useAuthStore } from "./useAuthStore";
-export const useChatStore = create(() => ({
+
+export const useChatStore = create((set,get) => ({
   allContacts: [],
   chats: [],
   messages: [],
@@ -28,6 +29,7 @@ export const useChatStore = create(() => ({
       const res = await axiosInstance.get("/messages/contacts");
       set({ allContacts: res.data });
     } catch (error) {
+      console.error("Error fetching contacts:", error);
       toast.error(error.response.data.message);
     } finally {
       set({ isUsersLoading: false });
