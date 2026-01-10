@@ -109,6 +109,7 @@ export const logout = (_, res) => {
 
 export const updateProfile = async (req, res) => {
   try {
+    const { profilePic } = req.body;
     if (!profilePic)
       return res.status(400).json({ message: "Profile pic is required" });
 
@@ -121,6 +122,7 @@ export const updateProfile = async (req, res) => {
       { profilePic: uploadResponse.secure_url },
       { new: true }
     );
+
     res.status(200).json(updatedUser);
   } catch (error) {
     console.log("Error in update profile:", error);
