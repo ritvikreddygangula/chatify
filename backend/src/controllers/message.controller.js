@@ -2,6 +2,7 @@ import Message from "../models/Message.js";
 import User from "../models/User.js";
 import cloudinary from "../lib/cloudinary.js";
 
+
 export const getAllContacts = async (req, res) => {
   try {
     const loggedInUserId = req.user._id;
