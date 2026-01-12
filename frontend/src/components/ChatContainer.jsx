@@ -41,7 +41,7 @@ function ChatContainer() {
   return (
     <>
       <ChatHeader />
-      <div className="felx-1 px-6 overflow-y-auto py-8">
+      <div className="felx-1 h-full px-6 overflow-y-auto py-8">
         {messages.length > 0 ? (
           <div className="max-w-3xl mx-auto space-y-6">
             {messages.map((msg) => (
@@ -84,6 +84,7 @@ function ChatContainer() {
         )}
       </div>
       <MessageInput />
+
     </>
   );
 }
